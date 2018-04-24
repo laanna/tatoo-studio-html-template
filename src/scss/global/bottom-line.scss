@@ -1,0 +1,33 @@
+.bottom-line {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background: $active-color;
+  -moz-border-radius: 2.5px;
+  -webkit-border-radius: 2.5px;
+  border-radius: 2.5px;
+
+  &:after {
+    position: absolute;
+    top: 2.5px;
+    left: 50%;
+    transform: translateX(-123%);
+    content: '';
+    bottom: 0px;
+    width: 60px;
+    height: 1px;
+    background: $against-a-dark-background;
+  }
+
+  &:before {
+    position: absolute;
+    top: 2.5px;
+    right: 50%;
+    transform: translateX(123%);
+    content: '';
+    bottom: 0px;
+    width: 60px;
+    height: 1px;
+    background: $against-a-dark-background;
+  }
+}

@@ -1,0 +1,52 @@
+.about {
+  padding: 5rem 0 4.95rem 0;
+  text-align: center;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__item {
+    flex-basis: 11.72rem;
+    padding: 1rem 1.3rem;
+    background-color: transparent;
+
+    &:hover {
+      .selected{
+        color: $active-color;
+      }
+      .icon {
+        border-color: $active-color;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__header {
+    margin: 1rem 0 0.75rem 0;
+    font-size: 0.844rem;
+    font-family: $ff-main;
+    color: $main-fonts-color;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__description {
+    margin: 0.75rem 0 0 0;
+    font-size: 0.5625rem;
+    font-family: $ff-additional;
+    color: $light-fonts-and-background;
+    letter-spacing: 0.1em;
+  }
+
+
+  &__icon-wrapper {
+    position: relative;
+  }
+}

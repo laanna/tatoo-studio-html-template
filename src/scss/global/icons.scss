@@ -1,0 +1,29 @@
+.icon-facebook {
+  position: absolute;
+  right: .5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: $against-a-dark-background;
+  transition: all 0.3s;
+  &:after {
+    @include centerer-xy();
+    content: '';
+    margin: auto;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background: $against-a-dark-background url(../img/icons/ico-facebook.svg) center no-repeat;
+    background-size: 65%;
+    border: 2px solid $dark-grey;
+    transition: all 0.3s;
+  }
+  &:hover {
+    background-color: $active-color;
+    &:after {
+      background: $active-color url(../img/icons/ico-facebook.svg) center no-repeat;
+      background-size: 65%;
+    }
+  }
+}
+

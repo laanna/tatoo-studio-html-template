@@ -1,0 +1,7 @@
+nav.nav
+    - var items = {home:'Home', about_us:'About us', artists:'Artists', testimonials:'Testimonials', gallery:'Gallery', blog:'Blog', contact:'Contact us'}
+    each val, index in items
+        if val === 'Home'
+            a.nav__link(href="#" + index)=val
+        else
+            a.nav__link(href="#" + index)=val
