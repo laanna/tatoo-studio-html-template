@@ -1,0 +1,39 @@
+.about-us {
+  &__list-picture {
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+
+    &:nth-child(2), &:nth-child(3) {
+      display: none;
+    }
+  }
+  &__picture {
+    width: 100%;
+
+  }
+  &__hero {
+    background-color: $dark-background;
+    color: $against-a-dark-background;
+  }
+  &__hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
+  &__hero-art {
+    flex-basis: 50%;
+  }
+  .art-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
+}
